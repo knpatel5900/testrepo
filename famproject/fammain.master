@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="fammain.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+   <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="assetmain.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+        .style1
+        {
+            width: 50px;
+        }
+        .style2
+        {
+            width: 50px;
+        }
+        .ddd
+        {
+            -moz-animation:ss 5s infinite;
+            -o-animation:ss 5s infinite;
+            -webkit-animation:ss 10s infinite;
+            }
+            @-moz-keyframes ss
+            {
+                from{-moz-transform:rotateY(0deg);}
+                to{-moz-transform:rotateY(720deg);}
+                }
+              @-webkit-keyframes ss
+            {
+                from{-moz-transform:rotateY(0deg);}
+                to{-moz-transform:rotateY(720deg);}
+                }
+            
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="header">
+     <%--   <table id="t1">
+            <tr>
+                <td class="style2">
+                    <a href="login.aspx">Login</a>
+                </td>
+                <td class="style1">
+                    <a href="#">Contact us</a>
+                </td>
+            </tr>
+        </table>--%>
+          <img src="images/fam.png" style="position:absolute;top:-5px" />
+    </div>
+    <div id="menu">
+  
+        <ul>
+        
+            <li><a href="mainhome.aspx">Home</a></li>
+            <li><a href="login.aspx">Login</a></li>
+            <li><a href="Registration.aspx">Register</a></li>
+            <li><a href="contactus.aspx">Contact us</a></li>
+            <li><a href="#">About FAM</a></li>
+            <li><a href="">Help</a></li>
+           
+            </ul>
+    </div>
+    <div id="left" style="float:left;height:510px;width:130px">
+    <img src="images/lft.png" class="ddd" height="550px"/>
+    </div>
+    <div id="wrapper" >
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+        
+    </div>
+    <div id="right" style="height:510px;width:130px;position:absolute;left:1230px;top:90px">
+      <img src="images/lft.png" class="ddd" height="550px" />
+    </div>
+    <div id="footer">
+    </div>
+    </form>
+</body>
+</html>
+
