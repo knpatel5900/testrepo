@@ -1,4 +1,4 @@
-  class HelloWorld
+  lass HelloWorld
 {
     public static void main(String args[])
     {
